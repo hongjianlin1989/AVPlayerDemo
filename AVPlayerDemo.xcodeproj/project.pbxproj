@@ -14,6 +14,9 @@
 		C1A3492029007DD600D393FF /* AVPlayerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A3491F29007DD600D393FF /* AVPlayerDemoTests.swift */; };
 		C1A3492A29007DD600D393FF /* AVPlayerDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A3492929007DD600D393FF /* AVPlayerDemoUITests.swift */; };
 		C1A3492C29007DD600D393FF /* AVPlayerDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A3492B29007DD600D393FF /* AVPlayerDemoUITestsLaunchTests.swift */; };
+		C1A3493A29007E4200D393FF /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A3493929007E4200D393FF /* PlayerView.swift */; };
+		C1A3493C29007E5300D393FF /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A3493B29007E5300D393FF /* PlayerViewModel.swift */; };
+		C1A3493E29007F7D00D393FF /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A3493D29007F7D00D393FF /* Resources.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		C1A3492529007DD600D393FF /* AVPlayerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVPlayerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1A3492929007DD600D393FF /* AVPlayerDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerDemoUITests.swift; sourceTree = "<group>"; };
 		C1A3492B29007DD600D393FF /* AVPlayerDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C1A3493929007E4200D393FF /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		C1A3493B29007E5300D393FF /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
+		C1A3493D29007F7D00D393FF /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +100,9 @@
 		C1A3490D29007DD300D393FF /* AVPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C1A3493829007E0C00D393FF /* PlayerKit */,
 				C1A3490E29007DD300D393FF /* AVPlayerDemoApp.swift */,
+				C1A3493D29007F7D00D393FF /* Resources.swift */,
 				C1A3491029007DD300D393FF /* ContentView.swift */,
 				C1A3491229007DD500D393FF /* Assets.xcassets */,
 				C1A3491429007DD500D393FF /* Preview Content */,
@@ -125,6 +133,15 @@
 				C1A3492B29007DD600D393FF /* AVPlayerDemoUITestsLaunchTests.swift */,
 			);
 			path = AVPlayerDemoUITests;
+			sourceTree = "<group>";
+		};
+		C1A3493829007E0C00D393FF /* PlayerKit */ = {
+			isa = PBXGroup;
+			children = (
+				C1A3493929007E4200D393FF /* PlayerView.swift */,
+				C1A3493B29007E5300D393FF /* PlayerViewModel.swift */,
+			);
+			path = PlayerKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +274,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1A3493A29007E4200D393FF /* PlayerView.swift in Sources */,
+				C1A3493C29007E5300D393FF /* PlayerViewModel.swift in Sources */,
 				C1A3491129007DD300D393FF /* ContentView.swift in Sources */,
+				C1A3493E29007F7D00D393FF /* Resources.swift in Sources */,
 				C1A3490F29007DD300D393FF /* AVPlayerDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
