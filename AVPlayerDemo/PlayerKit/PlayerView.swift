@@ -14,12 +14,19 @@ struct PlayerView: View {
     @ObservedObject var viewModel: PlayerViewModel
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            VideoPlayer(player: viewModel.player)
+                .onAppear {
+                    viewModel.playerPlay()
+                }
+        }
     }
 }
 
 struct PlayerView_Previews: PreviewProvider {
     static var previews: some View {
-        PlayerView(viewModel: PlayerViewModel(videoUrl: VideoEndpoint.streaming.rawValue))
+        if let url = URL(string: VideoEndpoint.streaming.rawValue) {
+            PlayerView(viewModel: PlayerViewModel(videoUrl: url, delegate: nil))
+        }
     }
 }

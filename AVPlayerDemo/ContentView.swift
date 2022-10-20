@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    var viewModel: ContenViewModel = ContenViewModel()
+
     var body: some View {
-        PlayerView(viewModel: PlayerViewModel(videoUrl: VideoEndpoint.streaming.rawValue))
+        if let playViewModel = viewModel.playerViewModel {
+            PlayerView(viewModel: playViewModel)
+        }
     }
 }
 
